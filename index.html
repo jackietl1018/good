@@ -2,7 +2,8 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>jQuery鼠标滚动全屏切换预览特效 - 站长素材</title>
+<title>关于国民教育，你心里有数吗？</title>
+<link rel="icon" href="http://pic.58pic.com/58pic/17/13/77/73j58PICvYk_1024.jpg" type=" image/png" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
 <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
@@ -23,37 +24,73 @@ body{ color:#fff; font-family:"Microsoft Yahei"; text-align:center;}
 <div id="fullpage">
 
 	<!--固定导航-->
-	<ul class="menu">
-		<Li data-menuanchor="page1" class="active"><a href="#page1">1</a></Li>
-		<Li data-menuanchor="page2"><a href="#page2">2</a></Li>
-		<Li data-menuanchor="page3"><a href="#page3">3</a></Li>
-		<Li data-menuanchor="page4"><a href="#page4">4</a></Li>
-	</ul>
+
 
 	<!--第一个页面-->
 	<div class="section"><img src="img/student.gif" alt="" width=100% height="616" border="0"/></div>
 	<!--第二个页面-->
-	<div class="section">第二个页面</div> 
+	<div class="section">
+    <p>
+<div style="background:none;float:left;width:50%">
+  <p><iframe src="https://www.dydata.io/preview.html?id=996942848469442560" scrolling="no" border="0" frameborder="0" allowfullscreen="true" width ="100%" height="400"></iframe></p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+</div>
+<div style="background:none;float:left;width:48%">
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>添加关于左图的描述，balabalabalabalabala......</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+</div>
+</p>
+    </div> 
+    <ul class="menu">
+		<Li data-menuanchor="page1" class="active"><a href="#page1">1</a></Li>
+		<Li data-menuanchor="page2"><a href="#page2">2</a></Li>
+		<Li data-menuanchor="page3"><a href="#page3">3</a></Li>
+		<Li data-menuanchor="page4"><a href="#page4">4</a></Li>
+        <Li data-menuanchor="page5"><a href="#page5">5</a></Li>
+	</ul>
 	<!--第三个页面-->
 	<div class="section">
 		<div class="slide">第三屏的第一屏</div>
 		<div class="slide">第三屏的第二屏</div>
 		<div class="slide">第三屏的第三屏</div>
-		<div class="slide">第三屏的第四屏</div>
 	</div>
 	<!--第四个页面-->
-	<div class="section">第四个页面</div>
-	
+    <div class="section">
+	<div class="slide">第四屏的第一屏</div>
+		<div class="slide">第四屏的第二屏</div>
+		<div class="slide">第四屏的第三屏</div>
+		<div class="slide">第四屏的第四屏</div>
+     </div>
+    <div class="section">
+    <div class="slide">第五屏的第一屏</div>
+		<div class="slide">第五屏的第二屏</div>
+		<div class="slide">第五屏的第三屏</div>
+		<div class="slide">第五屏的第四屏</div>
+        <div class="slide">第五屏的第五屏</div>
+     </div>
 </div>
 
 <script type="text/javascript" src="js/jquery-1.11.1.js"></script>
 <script type="text/javascript" src="js/jquery.fullPage.js"></script>
 <script type="text/javascript">
 $(document).ready(function() {
-
 	$('#fullpage').fullpage({
 		
-		sectionsColor:['fff','#5c7ff1','green','#cccccc'], //控制每个section的背景颜色
+		sectionsColor:['fff','#5c7ff1','green','#cccccc','blue'], //控制每个section的背景颜色
 		
 		controlArrow:true,   //是否隐藏左右滑块的箭头(默认为true)
 		
@@ -65,8 +102,7 @@ $(document).ready(function() {
 		
 		scrolllingSpeed:1000,  //滚动速度，单位为毫秒(默认为700)
 		
-		anchors:['page1','page2','page3','page4'],  //定义锚链接(值不能和页面中任意的id或name相同，尤其是在ie下，定义时不需要加#)  
-
+		anchors:['page1','page2','page3','page4','page5'],  //定义锚链接(值不能和页面中任意的id或name相同，尤其是在ie下，定义时不需要加#)  
 		lockAnchors:false,  //是否锁定锚链接，默认为false。设置weitrue时，锚链接anchors属性也没有效果。
 		
 		loopBottom:false,  //滚动到最底部后是否滚回顶部(默认为false)
@@ -89,16 +125,16 @@ $(document).ready(function() {
 		
 		navigation:true, //是否显示项目导航（默认为false）
 		
-		navigationTooltips:["page1","page2","page3","page4"],//项目导航的 tip
+		navigationTooltips:["page1","page2","page3","page4","page5"],//项目导航的 tip
 		
 		navigationColor:'#fff', //项目导航的颜色
 		
 		slidesNavigation:true,
 		
 	});
-
 });
 </script>
 
 </body>
 </html>
+
