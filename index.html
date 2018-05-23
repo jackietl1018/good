@@ -85,9 +85,10 @@ body,td,th {
     <ul class="menu">
 		<Li data-menuanchor="page1" class="active"><a href="#page1">Topic</a></Li>
 		<Li data-menuanchor="page2"><a href="#page2">Foreword</a></Li>
-		<Li data-menuanchor="page3"><a href="#page3">Head-1</a></Li>
-		<Li data-menuanchor="page4"><a href="#page4">Head-2</a></Li>
-        <Li data-menuanchor="page5"><a href="#page5">Head-3</a></Li>
+		<Li data-menuanchor="page3"><a href="#page3">农村教育</a></Li>
+		<Li data-menuanchor="page4"><a href="#page4">高考改革</a></Li>
+        <Li data-menuanchor="page5"><a href="#page5">高等教育</a></Li>
+        <Li data-menuanchor="page6"><a href="#page6">教育公平</a></Li>
 	</ul>
 	<!--第三个页面-->
 	<div class="section">
@@ -132,6 +133,13 @@ body,td,th {
 		<div class="slide">第五屏的第四屏</div>
         <div class="slide">第五屏的第五屏</div>
      </div>
+    <div class="section">
+    <div class="slide">第六屏的第一屏</div>
+		<div class="slide">第六屏的第二屏</div>
+		<div class="slide">第六屏的第三屏</div>
+		<div class="slide">第六屏的第四屏</div>
+        <div class="slide">第六屏的第五屏</div>
+     </div>
 </div>
 
 <script type="text/javascript" src="js/jquery-1.11.1.js"></script>
@@ -140,7 +148,7 @@ body,td,th {
 $(document).ready(function() {
 	$('#fullpage').fullpage({
 		
-		sectionsColor:['fff','#5c7ff1','green','#cccccc','blue'], //控制每个section的背景颜色
+		sectionsColor:['fff','#5c7ff1','green','#cccccc','blue','brown'], //控制每个section的背景颜色
 		
 		controlArrow:true,   //是否隐藏左右滑块的箭头(默认为true)
 		
@@ -152,7 +160,7 @@ $(document).ready(function() {
 		
 		scrolllingSpeed:100,  //滚动速度，单位为毫秒(默认为700)
 		
-		anchors:['page1','page2','page3','page4','page5'],  //定义锚链接(值不能和页面中任意的id或name相同，尤其是在ie下，定义时不需要加#)  
+		anchors:['page1','page2','page3','page4','page5','page6'],  //定义锚链接(值不能和页面中任意的id或name相同，尤其是在ie下，定义时不需要加#)  
 		lockAnchors:false,  //是否锁定锚链接，默认为false。设置weitrue时，锚链接anchors属性也没有效果。
 		
 		loopBottom:false,  //滚动到最底部后是否滚回顶部(默认为false)
@@ -175,7 +183,7 @@ $(document).ready(function() {
 		
 		navigation:true, //是否显示项目导航（默认为false）
 		
-		navigationTooltips:["page1","page2","page3","page4","page5"],//项目导航的 tip
+		navigationTooltips:["page1","page2","page3","page4","page5","page6"],//项目导航的 tip
 		
 		navigationColor:'#FF0', //项目导航的颜色
 		
