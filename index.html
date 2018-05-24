@@ -34,20 +34,14 @@ body{
 .menu{ height:42px; background:FAFAD2;position:fixed;  top:0px; left:0; z-index:998; width:100%; }
 .menu li{list-style:none; float:left; display:inline-block; font:16px/42px "Microsoft Yahei";}
 .menu li a{ color:1A2B3C; text-decoration:none; text-align:center; display:block; padding:0px 15px}
-.menu li.active{ background:#F00;}
+.menu li.active{ background:blue;}
 body,td,th {
 	color: #FF6;
 	font-size: medium;
 	font-family: Verdana, Geneva, sans-serif;
 }
 </style>
-<style type="text/css">
-body,td,th {
-	font-family: Verdana, Geneva, sans-serif;
-	font-size: 24px;
-	color: #309;
-}
-</style>
+
 <style type="text/css">
      body,tr,td{margin: 0;}
 </style>
@@ -60,9 +54,9 @@ img{width:100%}
 	width: 100%;
 	top: 0px;
 }
-.photo a:hover{border:#fff;text-decoration:none;margin:0}
-.photo a span {display:none;cursor:hand;text-align:center;font:bold 70px/80px Verdana, Arial; }
-.photo a:hover span{width:40%;margin:0;background:#EEE5DE;filter:alpha(opacity=60);-moz-opacity:0.1;opacity:0.1;
+<!--.photo a:hover{border:#fff;text-decoration:none;margin:0}-->
+.photo a span {display:none;cursor:hand;text-align:center;font:bold 70px/80px Microsoft Yahei; }
+.photo a:hover span{width:40%;margin:0;background:#EEE5DE;
 display:block;position:absolute;bottom:55%;left:31%;color:#1A2B3C;filter:alpha(opacity=60);-moz-opacity:1;opacity:1;}
 </style>
 
@@ -73,7 +67,14 @@ display:block;position:absolute;bottom:55%;left:31%;color:#1A2B3C;filter:alpha(o
 
 	<!--固定导航-->
 
-
+<ul class="menu">
+		<Li data-menuanchor="page1" class="active"><a href="#首页">首页</a></Li>
+		<Li data-menuanchor="page2"><a href="#关键词">关键词</a></Li>
+		<Li data-menuanchor="page3"><a href="#农村教育">农村教育</a></Li>
+		<Li data-menuanchor="page4"><a href="#高考改革">高考改革</a></Li>
+        <Li data-menuanchor="page5"><a href="#高等教育">高等教育</a></Li>
+        <Li data-menuanchor="page6"><a href="#教育公平">教育公平</a></Li>
+	</ul>
 	<!--第一个页面-->
 	<div class="section"><table width="100%" border="0" cellspacing="0" cellpadding="0">
    <tr>
@@ -127,14 +128,7 @@ display:block;position:absolute;bottom:55%;left:31%;color:#1A2B3C;filter:alpha(o
   <p>&nbsp;</p>
 </div>
 </div>
-    <ul class="menu">
-		<Li data-menuanchor="page1" class="active"><a href="#首页">首页</a></Li>
-		<Li data-menuanchor="page2"><a href="#关键词">关键词</a></Li>
-		<Li data-menuanchor="page3"><a href="#农村教育">农村教育</a></Li>
-		<Li data-menuanchor="page4"><a href="#高考改革">高考改革</a></Li>
-        <Li data-menuanchor="page5"><a href="#高等教育">高等教育</a></Li>
-        <Li data-menuanchor="page6"><a href="#教育公平">教育公平</a></Li>
-	</ul>
+    
 	<!--第三个页面-->
 	<div class="section">
 		<div class="slide">
@@ -419,7 +413,7 @@ display:block;position:absolute;bottom:55%;left:31%;color:#1A2B3C;filter:alpha(o
 $(document).ready(function() {
 	$('#fullpage').fullpage({
 		
-		sectionsColor:['#FAFAD2','#FAFAD2','#FAFAD2','#FAFAD2','#FAFAD2','#FAFAD2'], //控制每个section的背景颜色
+		sectionsColor:['#FFF','#FFF','#FFF','#FFF','#FFF','#FFF'], //控制每个section的背景颜色
 		
 		controlArrow:true,   //是否隐藏左右滑块的箭头(默认为true)
 		
