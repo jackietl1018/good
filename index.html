@@ -33,13 +33,37 @@ body{
 .logo{ border:3px solid #fff; font:bold 24px/100px "Microsoft Yahei"; width:100px; height:100px; position:fixed; top:50px; left:50px; z-index:999;}
 .menu{ height:42px; background:FAFAD2;position:fixed;  top:0px; left:0; z-index:998; width:100%; }
 .menu li{list-style:none; float:left; display:inline-block; font:16px/42px "Microsoft Yahei";}
-.menu li a{ color:blue; text-decoration:none; text-align:center; display:block; padding:0px 15px}
+.menu li a{ color:1A2B3C; text-decoration:none; text-align:center; display:block; padding:0px 15px}
 .menu li.active{ background:#F00;}
 body,td,th {
 	color: #FF6;
 	font-size: medium;
 	font-family: Verdana, Geneva, sans-serif;
 }
+</style>
+<style type="text/css">
+body,td,th {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 24px;
+	color: #309;
+}
+</style>
+<style type="text/css">
+     body,tr,td{margin: 0;}
+</style>
+<style type="text/css">
+img{width:100%}
+.photo a{
+	position:relative;
+	display:block;
+	left: 0px;
+	width: 100%;
+	top: 0px;
+}
+.photo a:hover{border:#fff;text-decoration:none;margin:0}
+.photo a span {display:none;cursor:hand;text-align:center;font:bold 70px/80px Verdana, Arial; }
+.photo a:hover span{width:40%;margin:0;background:#EEE5DE;filter:alpha(opacity=60);-moz-opacity:0.1;opacity:0.1;
+display:block;position:absolute;bottom:55%;left:31%;color:#1A2B3C;filter:alpha(opacity=60);-moz-opacity:1;opacity:1;}
 </style>
 
 </head>
@@ -51,7 +75,13 @@ body,td,th {
 
 
 	<!--第一个页面-->
-	<div class="section"><img src="img/student.gif" alt="" width=100% height="616" border="0"/></div>
+	<div class="section"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+   <tr>
+    <td class="photo"><a href="#"><img src="img/student.gif" alt="" width=100% height="616" border="0"/><span>关于国民教育， 你心里有数吗？</span></a></td>
+    
+  </tr>
+</table>
+</div>
 	<!--第二个页面-->
 	<div class="section">
     <div style="background:none;float:left;width:25%">
@@ -69,12 +99,11 @@ body,td,th {
   <p>&nbsp;</p>
 </div>
     <div style="background:none;float:left;width:50%">
-  <p>&nbsp;</p>
-  <p>&nbsp;</p>
-  <p>&nbsp;</p>
-  <p>&nbsp;</p>
-  <p>&nbsp;</p>
-  <p>&nbsp;</p>
+     <p>&nbsp;</p>
+     <p>&nbsp;</p>
+     <p>&nbsp;</p>
+     <p>&nbsp;</p>
+     <p>&nbsp;</p>
   <p>7777777777777777777</p>
   <p>7777777777777777777777777777777777777777777777777777777777777777777777777777777777</p>
   <p><iframe src = "https://www.dydata.io/preview.html?id=998471283243163648" scrolling="no" border="0" frameborder="0" allowfullscreen="true" width ="80%" height="500"></iframe></p>
@@ -99,12 +128,12 @@ body,td,th {
 </div>
 </div>
     <ul class="menu">
-		<Li data-menuanchor="page1" class="active"><a href="#page1">Topic</a></Li>
-		<Li data-menuanchor="page2"><a href="#page2">Foreword</a></Li>
-		<Li data-menuanchor="page3"><a href="#page3">农村教育</a></Li>
-		<Li data-menuanchor="page4"><a href="#page4">高考改革</a></Li>
-        <Li data-menuanchor="page5"><a href="#page5">高等教育</a></Li>
-        <Li data-menuanchor="page6"><a href="#page6">教育公平</a></Li>
+		<Li data-menuanchor="page1" class="active"><a href="#首页">首页</a></Li>
+		<Li data-menuanchor="page2"><a href="#关键词">关键词</a></Li>
+		<Li data-menuanchor="page3"><a href="#农村教育">农村教育</a></Li>
+		<Li data-menuanchor="page4"><a href="#高考改革">高考改革</a></Li>
+        <Li data-menuanchor="page5"><a href="#高等教育">高等教育</a></Li>
+        <Li data-menuanchor="page6"><a href="#教育公平">教育公平</a></Li>
 	</ul>
 	<!--第三个页面-->
 	<div class="section">
@@ -280,9 +309,6 @@ body,td,th {
 	<div class="slide">
 	<div id="timeline">
 		<ul id="dates">
-         <p>&nbsp;</p>
-         <p>&nbsp;</p>
-         <p>&nbsp;</p>
 			<li><a href="#1900">1900</a></li>
 			<li><a href="#1930">1930</a></li>
 			<li><a href="#1944">1944</a></li>
@@ -295,6 +321,10 @@ body,td,th {
 			<li><a href="#2011">2011</a></li>
 		</ul>
 		<ul id="issues">
+                 <p>&nbsp;</p>
+                 <p>&nbsp;</p>
+                 <p>&nbsp;</p>
+                 <p>&nbsp;</p>
 			<li id="1900" class="selected">
 				<img src="img/1.png" width="256" height="256" />
 				<h1>1900</h1>
@@ -389,7 +419,7 @@ body,td,th {
 $(document).ready(function() {
 	$('#fullpage').fullpage({
 		
-		sectionsColor:['fff','#5c7ff1','green','#cccccc','blue','brown'], //控制每个section的背景颜色
+		sectionsColor:['#FAFAD2','#FAFAD2','#FAFAD2','#FAFAD2','#FAFAD2','#FAFAD2'], //控制每个section的背景颜色
 		
 		controlArrow:true,   //是否隐藏左右滑块的箭头(默认为true)
 		
@@ -401,7 +431,7 @@ $(document).ready(function() {
 		
 		scrolllingSpeed:100,  //滚动速度，单位为毫秒(默认为700)
 		
-		anchors:['page1','page2','page3','page4','page5','page6'],  //定义锚链接(值不能和页面中任意的id或name相同，尤其是在ie下，定义时不需要加#)  
+		anchors:['首页','关键词','农村教育','高考改革','高等教育','教育公平'],  //定义锚链接(值不能和页面中任意的id或name相同，尤其是在ie下，定义时不需要加#)  
 		lockAnchors:false,  //是否锁定锚链接，默认为false。设置weitrue时，锚链接anchors属性也没有效果。
 		
 		loopBottom:false,  //滚动到最底部后是否滚回顶部(默认为false)
@@ -424,9 +454,9 @@ $(document).ready(function() {
 		
 		navigation:true, //是否显示项目导航（默认为false）
 		
-		navigationTooltips:["page1","page2","page3","page4","page5","page6"],//项目导航的 tip
+		navigationTooltips:["首页","关键词","农村教育","高考改革","高等教育","教育公平"],//项目导航的 tip
 		
-		navigationColor:'#FF0', //项目导航的颜色
+		navigationColor:'#1A2B3C', //项目导航的颜色
 		
 		slidesNavigation:true,
 		
