@@ -1,0 +1,145 @@
+img{width:100%}
+.photo a{
+	position:relative;
+	display:block;
+	left: 0px;
+	width: 100%;
+	top: 0px;
+}
+.photo a span {display:none;cursor:hand;text-align: center;font:bold 70px/80px Microsoft Yahei; }
+.photo a:hover span{width:45%;margin:0;background:#EEE5DE;
+display:block;position:absolute;bottom:55%;left:28%;color:#1A2B3C;filter:alpha(opacity=60);-moz-opacity:1;opacity:1;}
+.logo{ border:3px solid #fff; font:bold 24px/100px "Microsoft Yahei"; width:100px; height:100px; position:fixed; top:50px; left:50px; z-index:999;}
+.menu{ 
+	height:48px; 
+	background:#FAFAD2;
+	position:fixed;
+	top:0px; 
+	left:0; 
+	z-index:998; 
+	width:100%;
+}
+.menu li{
+	list-style:none; 
+	float:left; 
+	display:inline-block;
+	font-size: 24px;
+	line-height: 48px;
+	border-radius: 30px; 
+}
+.menu li a{ 
+	color:#1A2B3C; 
+	text-decoration:none; 
+	text-align:center; 
+	display:block; 
+	padding:0px 15px
+}
+.menu li.active{ 
+	background:#8cd7f7;
+}
+
+.title-box{
+	width: 100%;
+	height: 100%;
+}
+.title-box img{
+	width: 100%;
+	height: 50%;
+}
+.title-box span{
+	font-size: .36rem;
+	position: absolute;
+	left: 35%;
+	top:15%;
+	font-weight: 900;
+}
+.word-box{
+	width: 100%;
+	height: 100%;
+	display: flex;
+}
+.word-left{
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 70px;
+    text-indent: 48px;
+    padding: 290px 100px;
+}
+.mask{
+	width: 200px;
+	height: 200px;
+	background: #fff;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	z-index: 999;
+}
+.school-nums{
+	font-weight:bold; 
+	text-align:center;
+	font-size:24px;
+	margin-bottom:80px;
+}
+.school-tit{
+	text-indent:1em;
+	font-weight:bold;
+	text-align:center;
+	font-size:36px;
+	margin-bottom:30px
+}
+.school-item{
+	text-indent:2em;
+	font-size:18px;
+}
+.school-mask0{
+	width: 100px;
+	height: 100%;
+	background: #fff;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+.school-mask1{
+	width: 80%;
+	height: 80px;
+	background: #fff;
+	position: absolute;
+	top: 265px;
+	left: 280px;
+}
+.school-mask2{
+	width: 100px;
+	height: 100px;
+	background: #fff;
+	position: absolute;
+	right: 0;
+	bottom:0;
+}
+.school-mask3{
+	width: 100px;
+	height: 100px;
+	background: #fff;
+	position: absolute;
+	right: 85px;
+	bottom:0;
+}
+.school-mask5{
+	width: 100px;
+	height: 100%;
+	background: #fff;
+	position: absolute;
+	right: 0;
+	top:0;
+}
+.school-text{
+	padding-top:36px;
+	font-size: 24px; 
+}
+.clear-div{
+    clear:both;
+}
+.end-gif{
+	width: 100%;
+	height: 100%;
+	display: block;
+}
